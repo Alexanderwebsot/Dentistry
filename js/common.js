@@ -1,4 +1,19 @@
 $(document).ready(function () {
+  $('.header-nav-btn').on('click', function() {
+    $('.modal-window-2').addClass('modal-window-active');
+    $('.dark-window').addClass('dark-window-active');
+    return false;
+  })
+  $('.btn-1').on('click', function() {
+    $('.modal-window-1').addClass('modal-window-active');
+    $('.dark-window').addClass('dark-window-active');
+    return false;
+  })
+  $('.dark-window').on('click', function() {
+    $('.modal-window').removeClass('modal-window-active');
+    $('.dark-window').removeClass('dark-window-active');
+    return false;
+  })
   $('.reviews-row').slick({
       infinite: true,
       slidesToShow: 2,
